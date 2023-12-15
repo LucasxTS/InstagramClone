@@ -1,4 +1,4 @@
-package com.example.instagramclone.ui.views
+package com.example.instagramclone.ui.views.home.homecomponents
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background

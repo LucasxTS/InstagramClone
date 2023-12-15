@@ -1,4 +1,4 @@
-package com.example.instagramclone.ui.views
+package com.example.instagramclone.ui.views.home.homecomponents
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -16,7 +16,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
@@ -57,7 +56,7 @@ fun instagramStories(storiesList: List<StoriesModel>) {
 }
 
 @Composable
-fun StorieItem(story: StoriesModel) {
+private fun StorieItem(story: StoriesModel) {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier
