@@ -6,7 +6,6 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material.BottomNavigation
 import androidx.compose.material.BottomNavigationItem
 import androidx.compose.material.Icon
-import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
@@ -31,9 +30,7 @@ fun BottomNavigationBar(navController: NavController) {
     val currentRoute = navBackStackEntry?.destination?.route
 
 
-    Scaffold(
-        bottomBar = {
-            BottomNavigation(
+    BottomNavigation(
                 modifier = Modifier
                     .fillMaxWidth()
             ) {
@@ -50,10 +47,6 @@ fun BottomNavigationBar(navController: NavController) {
                 }
             }
         }
-    ) {
-    }
-}
-
 
 @Preview
 @Composable
