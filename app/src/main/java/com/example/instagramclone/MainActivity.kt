@@ -18,6 +18,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.instagramclone.ui.theme.InstagramCloneTheme
 import com.example.instagramclone.ui.views.bottomnavigation.BottomNavigationBar
 import com.example.instagramclone.ui.views.home.HomeScreen
+import com.example.instagramclone.ui.views.profile.ProfileScreen
 import com.example.instagramclone.ui.views.search.SearchScreen
 
 class MainActivity : ComponentActivity() {
@@ -57,6 +58,9 @@ fun InstagramCloneApp() {
             }
             composable("search") {
                 SearchScreen(navController)
+            }
+            composable("profile") {
+                ProfileScreen(navController)
             }
         }
     }
